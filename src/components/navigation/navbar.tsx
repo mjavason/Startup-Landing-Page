@@ -2,7 +2,7 @@ import { Button } from "@heroui/react";
 
 const Navbar = () => {
   return (
-    <nav className="p-4 text-white bg-purple-900">
+    <nav className="p-4 text-sm text-white bg-primary-500">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-4">
@@ -18,7 +18,7 @@ const Navbar = () => {
 
         {/* Buttons */}
         <div className="hidden md:flex gap-4">
-          <Button variant="flat" className="text-white hover:text-gray-300">
+          <Button className="text-white bg-primary-500 hover:text-gray-300">
             Login
           </Button>
           <Button variant="bordered" className="text-white border-white hover:bg-white hover:text-purple-900">

@@ -10,7 +10,22 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        poppins: 'Poppins, sans-serif',
+      },
       colors: {
+        primary: {
+          50: '#ECE8FB', // Lightest shade
+          100: '#D3C8F6',
+          200: '#B8A5F1',
+          300: '#9C81EB',
+          400: '#8160E6',
+          500: '#2F1893', // Base color
+          600: '#29157F',
+          700: '#22126B',
+          800: '#1C0E58',
+          900: '#150A44', // Darkest shade
+        },
         background: 'var(--background)',
         foreground: 'var(--foreground)',
       },

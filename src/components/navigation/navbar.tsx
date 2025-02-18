@@ -7,10 +7,10 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className='text-white bg-primary-500 '>
-      <div className='max-w-[100%] flex justify-between items-center p-5 border-b-2 border-gray-400'>
+    <nav className='text-white bg-primary-500'>
+      <div className='max-w-[100%] flex justify-between items-center p-5 border-b-2 border-[#6757AE]'>
         {/* Desktop Menu */}
-        <ul className='order-4 md:order-1 hidden md:flex gap-4'>
+        <ul className='order-4 md:order-1 hidden md:flex gap-5'>
           <li className='hover:text-gray-500 cursor-pointer'>
             <label htmlFor='products-sub-nav' className='cursor-pointer'>
               Products <i className='fas fa-chevron-down'></i>

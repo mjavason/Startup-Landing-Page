@@ -25,7 +25,7 @@ export default function RootLayout({
         />
         <script src='https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js'></script>
       </head>
-      <body className='font-poppins'>
+      <body className='font-poppins bg-primary-500'>
         <Navbar />
         {children}
       </body>

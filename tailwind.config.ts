@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        roboto: ['var(--font-roboto)', 'sans-serif'], // For variable fonts
+        poppins: ['var(--font-poppins)', 'sans-serif'], // For variable fonts
       },
       colors: {
         primary: {

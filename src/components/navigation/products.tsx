@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ProductSubNavBar = () => {
   return (
-    <div className='w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 p-6 my-5 bg-primary-500 shadow-lg rounded-xl'>
+    <div className='absolute left-0 top-full w-full bg-primary-500 shadow-lg rounded-xl grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 p-6 z-50  border-t-2 border-[#6757AE]'>
       {[
         {
           img: '/images/smartphones.png',

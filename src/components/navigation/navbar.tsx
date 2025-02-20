@@ -28,7 +28,7 @@ const Navbar = () => {
         </ul>
 
         {/* Logo */}
-        <p className='order-2 w-[45vw] md:w-auto md:order-1 text-lg font-bold'>
+        <p className='order-2 w-[45vw] md:w-auto md:order-1 text-2xl font-bold'>
           Startup
         </p>
 

@@ -9,9 +9,7 @@ const HeroSection = () => {
           Generate Awesome Web Pages
         </h1>
         <p className='text-white text-md leading-relaxed'>
-          The most important part of the Startup is the samples. The samples
-          form a set of 25 usable pages you can use as is or you can add new
-          blocks.
+          Create stunning web pages effortlessly with our intuitive tools. Customize and launch your site in no time.
         </p>
         <button className='bg-[#e93a7dfc] w-1/2 hover:bg-[#e93a7dc7] text-white font-semibold py-2 rounded-full'>
           Learn More

@@ -1,125 +1,66 @@
-function ProductSubNavBar() {
+import Image from 'next/image';
+
+const ProductSubNavBar = () => {
   return (
-    <>
-      <input
-        id='products-sub-nav'
-        type='checkbox'
-        className='peer/products hidden'
-      />
-      <div className='w-[100%] grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 p-6 my-5 hidden peer-checked/products:grid'>
-        <div className='flex flex-col gap-5 p-5'>
+    <div className='w-full grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-10 p-6 my-5 bg-primary-500 shadow-lg rounded-xl'>
+      {[
+        {
+          img: '/images/smartphones.png',
+          title: 'Smartphones',
+          desc: 'Top technology in our store. Hurry up for sales',
+        },
+        {
+          img: '/images/laptops.png',
+          title: 'Laptops',
+          desc: 'The powerful laptops for our members',
+        },
+        {
+          img: '/images/headsets.png',
+          title: 'Headsets',
+          desc: 'High sound quality headphones for you',
+        },
+        {
+          img: '/images/webcams.png',
+          title: 'Webcams',
+          desc: 'Show off yourself with cool webcams',
+        },
+        {
+          img: '/images/goprocams.png',
+          title: 'GoPro Cams',
+          desc: 'Action cam. Capture. Create. Share.',
+        },
+        {
+          img: '/images/mouse.png',
+          title: 'Mouses',
+          desc: 'Optical, Wireless, Gaming Mouses',
+        },
+        {
+          img: '/images/projector.png',
+          title: 'Projectors',
+          desc: 'HighRes Projectors with Built-In TV',
+        },
+        {
+          img: '/images/monitor.png',
+          title: 'Monitors',
+          desc: 'QHD resolution widescreen monitors',
+        },
+      ].map((product, index) => (
+        <div key={index} className='flex flex-col gap-5 p-5'>
           <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/smartphones.png'
-              alt=''
+            <Image
+              src={product.img}
+              alt={product.title}
+              width={48}
+              height={48}
               className='h-full object-contain'
             />
           </div>
-          <h3 className='text-xl'>Smartphones</h3>
-          <p className='text-md text-[#C1BADF]'>
-            Top technology in our store. Hurry up for sales
-          </p>
+          <h3 className='text-xl'>{product.title}</h3>
+          <p className='text-md text-[#C1BADF]'>{product.desc}</p>
         </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/laptops.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Laptops</h3>
-          <p className='text-md text-[#C1BADF]'>
-            The powerful laptops for our members
-          </p>
-        </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/headsets.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Headsets</h3>
-          <p className='text-md text-[#C1BADF]'>
-            High sound quality headphones for you
-          </p>
-        </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/webcams.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Webcams</h3>
-          <p className='text-md text-[#C1BADF]'>
-            Show off yourself with cool webcams
-          </p>
-        </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/goprocams.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>GoPro Cams</h3>
-          <p className='text-md text-[#C1BADF]'>
-            Action cam. Capture. Create. Share.
-          </p>
-        </div>
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/mouse.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Mouses</h3>
-          <p className='text-md text-[#C1BADF]'>
-            Optical, Wireless, Gaming Mouses
-          </p>
-        </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex items-center'>
-            <img
-              src='/images/projector.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Projectors</h3>
-          <p className='text-md text-[#C1BADF]'>
-            HighRes Projectors with Built-In TV
-          </p>
-        </div>
-
-        <div className='flex flex-col gap-5 p-5'>
-          <div className='w-full h-12 flex'>
-            <img
-              src='/images/monitor.png'
-              alt=''
-              className='h-full object-contain'
-            />
-          </div>
-          <h3 className='text-xl'>Monitors</h3>
-          <p className='text-md text-[#C1BADF]'>
-            QHD resolution widescreen monitors
-          </p>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
-}
+};
 
 export default ProductSubNavBar;
